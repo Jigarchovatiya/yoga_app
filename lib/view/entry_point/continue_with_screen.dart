@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
-import 'package:yoga_app/res/constant/color_constatnt.dart';
+import 'package:yoga_app/res/constant/color_constant.dart';
 import 'package:yoga_app/res/constant/extensions/extensions.dart';
 
 import '../../res/constant/app_images.dart';
@@ -58,10 +58,10 @@ class _ContinueWithScreenState extends State<ContinueWithScreen> {
                 itemCount: 4,
                 separatorBuilder: (context, index) => 20.0.addHSpace(),
                 itemBuilder: (context, index) => Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: ListTile(
                     leading: Image.asset(""),
-                    title: Text(""),
+                    title: const Text(""),
                   ),
                 ),
               ),

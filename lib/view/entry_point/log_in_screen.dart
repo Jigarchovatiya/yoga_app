@@ -5,7 +5,7 @@ import 'package:yoga_app/res/constant/app_strings.dart';
 import 'package:yoga_app/route/routes_name.dart';
 
 import '../../res/constant/app_images.dart';
-import '../../res/constant/color_constatnt.dart';
+import '../../res/constant/color_constant.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({Key? key}) : super(key: key);
