@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../res/common/app_button.dart';
-import '../../../res/constant/app_images.dart';
+import '../../../res/constant/app_assets.dart';
+import '../../../res/constant/app_color.dart';
 import '../../../res/constant/app_strings.dart';
-import '../../../res/constant/color_constant.dart';
-import '../../../route/routes_name.dart';
 
 class ViewTwo extends StatelessWidget {
   const ViewTwo({Key? key}) : super(key: key);
@@ -33,10 +32,10 @@ class ViewTwo extends StatelessWidget {
         ),
         AppButton(
           onTap: () {
-            Navigator.pushNamed(
-              context,
-              RoutesName.viewThree,
-            );
+            // Navigator.pushNamed(
+            //   context,
+            //   RoutesName.viewThree,
+            // );
           },
           text: AppStrings.next,
         ),

@@ -6,8 +6,8 @@ class RoutesName {
   static const String viewThree = "/viewThree";
   static const String onBoarding = "/onBoarding";
   static const String continueWithScreen = "/continueWithScreen";
-  // static const String checkOutTwo = "/checkOutTwo";
-  // static const String confirmEmail = "/confirmEmail";
+  static const String otpLogInScreen = "/otpLogInScreen";
+  static const String personalizationScreen = "/personalizationScreen";
   // static const String emptyCart = "/emptyCart";
   // static const String bottomBar = "/bottomBar";
   // static const String home = "/home";

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yoga_app/res/common/app_button.dart';
-import 'package:yoga_app/res/constant/app_images.dart';
+import 'package:yoga_app/res/constant/app_assets.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
-
-import '../../../route/routes_name.dart';
 
 class ViewOne extends StatelessWidget {
   const ViewOne({Key? key}) : super(key: key);
@@ -33,7 +31,7 @@ class ViewOne extends StatelessWidget {
         ),
         AppButton(
           onTap: () {
-            Navigator.pushNamed(context, RoutesName.viewTwo);
+            // Navigator.pushNamed(context, RoutesName.viewTwo);
             debugPrint("Next --> ");
           },
           text: AppStrings.next,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:yoga_app/res/constant/app_color.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
-import 'package:yoga_app/res/constant/color_constant.dart';
 import 'package:yoga_app/res/constant/extensions/extensions.dart';
 import 'package:yoga_app/route/routes_name.dart';
 import 'package:yoga_app/view/entry_point/page_view/view_one.dart';
@@ -58,7 +58,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
-                  height: MediaQuery.of(context).size.height / 2.1,
+                  height: MediaQuery.of(context).size.height / 2,
                 ),
                 Center(
                   child: SmoothPageIndicator(

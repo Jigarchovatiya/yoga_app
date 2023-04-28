@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:yoga_app/res/constant/app_images.dart';
+import 'package:yoga_app/res/constant/app_assets.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
 import 'package:yoga_app/route/routes_name.dart';
 

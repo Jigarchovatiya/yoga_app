@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yoga_app/res/constant/color_constant.dart';
+import 'package:yoga_app/res/constant/app_color.dart';
 
 class AppButton extends StatelessWidget {
   final String? text;

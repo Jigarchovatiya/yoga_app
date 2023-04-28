@@ -14,10 +14,17 @@ class AppImages {
 //log in screen -->
   static const String logInImage = "${imageBasePath}Rectangle 26.png";
 
+  // otp log in screen -->
+  static const String otpImage = "${imageBasePath}otp_image.png";
+
   /// Icons
 //social media -->
-  static const String google = "${iconBasePath}Group 37022.png";
+  static const String google = "${iconBasePath}google.png";
   static const String gmail = "${iconBasePath}Gmail.png";
-  static const String fb = "${iconBasePath}Group 37023.png";
+  static const String fb = "${iconBasePath}facebook.png";
   static const String apple = "${iconBasePath}Vector.png";
+
+  // mail sms -->
+  static const String mail = "${imageBasePath}Envelope.png";
+  static const String sms = "${imageBasePath}SMS.png";
 }

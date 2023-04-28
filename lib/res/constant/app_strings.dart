@@ -25,4 +25,17 @@ class AppStrings {
   static const String logInText = 'Yoga Heals the Soul';
   static const String logInTextTwo = 'Welcome Back!';
   static const String connectWith = 'Login or connect with:';
+
+  // otp log in screen -->
+  static const String verifyText = 'Enter the verification code\nwe sent you on\n\n+91 - 784XXXXXXX';
+  static const String resendOtp = 'Resend OTP via: ';
+  static const String mailText = 'Mail';
+  static const String smsText = 'Sms';
+
+  /// personalize
+// one -->
+  static const String title = 'Let us know you better';
+  static const String description = 'Tell us about yourself to help us create your\npersonalization plan accordingly.';
+  static const String username = 'Username';
+  static const String gender = 'Gender';
 }

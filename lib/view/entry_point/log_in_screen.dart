@@ -4,8 +4,8 @@ import 'package:yoga_app/res/common/app_button.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
 import 'package:yoga_app/route/routes_name.dart';
 
-import '../../res/constant/app_images.dart';
-import '../../res/constant/color_constant.dart';
+import '../../res/constant/app_assets.dart';
+import '../../res/constant/app_color.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({Key? key}) : super(key: key);
@@ -26,7 +26,12 @@ class _LogInScreenState extends State<LogInScreen> {
               SizedBox(
                 child: Stack(
                   children: [
-                    Image.asset(AppImages.logInImage),
+                    Image.asset(
+                      fit: BoxFit.fill,
+                      AppImages.logInImage,
+                      height: MediaQuery.of(context).size.height / 1.9,
+                      width: double.infinity,
+                    ),
                     Positioned(
                       top: 10,
                       right: 20,
@@ -49,10 +54,10 @@ class _LogInScreenState extends State<LogInScreen> {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(20),
+              const Padding(
+                padding: EdgeInsets.all(20),
                 child: Column(
-                  children: const [
+                  children: [
                     Text(
                       AppStrings.logInTextTwo,
                       style: TextStyle(color: AppColors.appColor, fontWeight: FontWeight.w500, fontSize: 20),
@@ -67,7 +72,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     labelText: 'Phone Number',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
-                      borderSide: BorderSide(),
+                      borderSide: const BorderSide(),
                     ),
                   ),
                   initialCountryCode: 'IN',
