@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'entry_point/onboarding_screen.dart';
+import 'entry_point/log_in_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       // routes: appRoutes,
       // initialRoute: RoutesName.splashScreen,
-      home: const OnBoardingScreen(),
+      home: const LogInScreen(),
     );
   }
 }

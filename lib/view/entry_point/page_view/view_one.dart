@@ -33,7 +33,7 @@ class ViewOne extends StatelessWidget {
           onTap: () {
             // Navigator.pushNamed(context, RoutesName.,);
           },
-          text: AppStrings.buttonText,
+          text: AppStrings.next,
         ),
         SizedBox(
           height: MediaQuery.of(context).size.height / 15,

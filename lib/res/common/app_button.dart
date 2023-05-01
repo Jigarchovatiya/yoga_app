@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yoga_app/res/common/color_constatnt.dart';
 
 class AppButton extends StatelessWidget {
   final String? text;
@@ -17,7 +18,7 @@ class AppButton extends StatelessWidget {
         height: 44,
         width: 358,
         decoration: BoxDecoration(
-          color: const Color(0xFFB95DC8),
+          color: AppColors.buttonColor,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(

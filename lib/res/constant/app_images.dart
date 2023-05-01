@@ -15,4 +15,9 @@ class AppImages {
   static const String logInImage = "${imageBasePath}Rectangle 26.png";
 
   /// Icons
+//social media -->
+  static const String google = "${iconBasePath}Group 37022.png";
+  static const String gmail = "${iconBasePath}Gmail.png";
+  static const String fb = "${iconBasePath}Group 37023.png";
+  static const String apple = "${iconBasePath}Vector.png";
 }

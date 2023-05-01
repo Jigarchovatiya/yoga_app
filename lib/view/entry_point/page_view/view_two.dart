@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../res/common/app_button.dart';
+import '../../../res/common/color_constatnt.dart';
 import '../../../res/constant/app_images.dart';
 import '../../../res/constant/app_strings.dart';
 
@@ -23,7 +24,7 @@ class ViewTwo extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 20,
-            color: Color(0xFF51275E),
+            color: AppColors.appColor,
           ),
         ),
         SizedBox(
@@ -33,7 +34,7 @@ class ViewTwo extends StatelessWidget {
           onTap: () {
             // Navigator.pushNamed(context, RoutesName.,);
           },
-          text: AppStrings.buttonText,
+          text: AppStrings.next,
         ),
         SizedBox(
           height: MediaQuery.of(context).size.height / 15,
@@ -44,7 +45,7 @@ class ViewTwo extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 16,
-            color: Color(0xFFA0A0A0),
+            color: AppColors.appColor,
           ),
         ),
       ],
