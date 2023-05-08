@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
+import 'package:yoga_app/res/constant/color_constatnt.dart';
 import 'package:yoga_app/res/constant/extensions/extensions.dart';
+import 'package:yoga_app/route/routes_name.dart';
 import 'package:yoga_app/view/entry_point/page_view/view_one.dart';
 import 'package:yoga_app/view/entry_point/page_view/view_three.dart';
 
@@ -22,13 +24,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        foregroundColor: Colors.black,
-        backgroundColor: Colors.transparent,
+        foregroundColor: AppColors.appColor,
+        backgroundColor: AppColors.appBar,
         leading: const BackButton(),
         actions: [
           Center(
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamedAndRemoveUntil(context, RoutesName.logInScreen, (route) => false);
+                debugPrint("Log In Screen --> ");
+              },
               child: const Text(
                 AppStrings.skip,
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.black),

@@ -1,11 +1,11 @@
 class RoutesName {
   static const String splashScreen = "/";
   static const String logInScreen = "/logInScreen";
-  // static const String signUpScreen = "/signUpScreen";
-  // static const String success = "/success";
-  // static const String selectScreen = "/selectScreen";
-  // static const String searchError = "/searchError";
-  // static const String checkOutOne = "/checkOutOne";
+  static const String viewOne = "/viewOne";
+  static const String viewTwo = "/viewTwo";
+  static const String viewThree = "/viewThree";
+  static const String onBoarding = "/onBoarding";
+  static const String continueWithScreen = "/continueWithScreen";
   // static const String checkOutTwo = "/checkOutTwo";
   // static const String confirmEmail = "/confirmEmail";
   // static const String emptyCart = "/emptyCart";

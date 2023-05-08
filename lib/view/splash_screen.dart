@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
       const Duration(seconds: 3),
-      () => Navigator.pushNamed(context, RoutesName.logInScreen),
+      () => Navigator.pushNamedAndRemoveUntil(context, RoutesName.onBoarding, (route) => false),
     );
   }
 
@@ -26,13 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
               Color(0xFFE1A9EA),
-              Color(0xFFEAA8CB),
+              Color(0x00eaa8cb),
             ],
           ),
         ),
@@ -63,16 +63,16 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: MediaQuery.of(context).size.height / 3.5,
               ),
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 height: 110,
                 margin: const EdgeInsets.all(20),
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
                     colors: [
-                      Color(0xFFCA4384),
-                      Color(0xFFB44BC5),
+                      Color(0xB5B44BC5),
+                      Color(0xA1CA4384),
                     ],
                   ),
                   shape: BoxShape.circle,

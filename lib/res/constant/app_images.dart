@@ -4,7 +4,7 @@ class AppImages {
 
   /// Images -->
 //  splash screen -->
-  static const String guruIcon = "${imageBasePath}guru_icon.png";
+  static const String guruIcon = "${iconBasePath}guru_icon.png";
 
   //onboarding -->
   static const String pageViewImageOne = "${imageBasePath}cacsdVFVege 1.png";

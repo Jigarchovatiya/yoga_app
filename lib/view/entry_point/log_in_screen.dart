@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:yoga_app/res/common/app_button.dart';
-import 'package:yoga_app/res/common/color_constatnt.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
+import 'package:yoga_app/route/routes_name.dart';
 
 import '../../res/constant/app_images.dart';
+import '../../res/constant/color_constatnt.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({Key? key}) : super(key: key);
@@ -81,22 +82,48 @@ class _LogInScreenState extends State<LogInScreen> {
                   text: AppStrings.continu,
                 ),
               ),
+              SizedBox(height: MediaQuery.of(context).size.height / 30),
               const Center(
                 child: Text(
                   AppStrings.connectWith,
                   style: TextStyle(color: AppColors.appColor, fontSize: 16, fontWeight: FontWeight.w400),
                 ),
               ),
+              SizedBox(height: MediaQuery.of(context).size.height / 100),
               Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 100),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Image.asset(AppImages.google, height: 24),
-                      Image.asset(AppImages.fb, height: 24),
-                      Image.asset(AppImages.apple, height: 27),
-                      Image.asset(AppImages.gmail, height: 40),
+                      IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, RoutesName.continueWithScreen);
+                          debugPrint("Continue with Screen -->");
+                        },
+                        icon: Image.asset(AppImages.google, height: 24),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, RoutesName.continueWithScreen);
+                          debugPrint("Continue with Screen -->");
+                        },
+                        icon: Image.asset(AppImages.fb, height: 24),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, RoutesName.continueWithScreen);
+                          debugPrint("Continue with Screen -->");
+                        },
+                        icon: Image.asset(AppImages.apple, height: 27),
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, RoutesName.continueWithScreen);
+                          debugPrint("Continue with Screen -->");
+                        },
+                        icon: Image.asset(AppImages.gmail, height: 40),
+                      ),
                     ],
                   ),
                 ),

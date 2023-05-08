@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'entry_point/log_in_screen.dart';
+import '../route/routes.dart';
+import '../route/routes_name.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
         fontFamily: "inter",
         primarySwatch: Colors.blue,
       ),
-      // routes: appRoutes,
-      // initialRoute: RoutesName.splashScreen,
-      home: const LogInScreen(),
+      routes: appRoutes,
+      initialRoute: RoutesName.splashScreen,
+      // home: const SplashScreen(),
     );
   }
 }
