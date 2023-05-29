@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:yoga_app/res/common/app_app_bar.dart';
 import 'package:yoga_app/res/common/app_textfield.dart';
 import 'package:yoga_app/res/constant/app_color.dart';
 import 'package:yoga_app/res/constant/app_strings.dart';
@@ -17,57 +16,42 @@ class _PersonalizationScreenOneState extends State<PersonalizationScreenOne> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: AppColors.personalizeBackground,
-      appBar: AppAppbar(
-        appBar: AppBar(),
-        action: const Text(AppStrings.skip),
-      ),
-      body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+        backgroundColor: AppColors.personalizeBackground,
+        body: const SafeArea(
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    AppStrings.title,
-                    style: TextStyle(color: AppColors.buttonColor, fontSize: 24, fontWeight: FontWeight.w600),
-                  ),
-                  SizedBox(
-                    height: height / 80,
-                  ),
-                  const Text(
-                    AppStrings.description,
-                    style: TextStyle(color: AppColors.descriptionColor, fontSize: 16, fontWeight: FontWeight.w500),
-                  ),
+                  BackButton(),
+                  Text(AppStrings.skip),
+                ],
+              )
+            ],
+          ),
+        ),
+        bottomSheet: BottomSheet(
+          onClosing: () => setState(() {}),
+          builder: (context) {
+            return Container(
+              width: double.infinity,
+              height: 600,
+              clipBehavior: Clip.antiAlias,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(40),
+                  topLeft: Radius.circular(40),
+                ),
+              ),
+              child: const Column(
+                children: [
+                  Text(AppStrings.username),
+                  AppTextField(),
                 ],
               ),
-            ),
-            // const Spacer(),
-            Stack(children: [
-              Container(
-                height: height / 1.4,
-                width: double.infinity,
-                decoration: const BoxDecoration(
-                  color: AppColors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(40),
-                    topRight: Radius.circular(40),
-                  ),
-                ),
-                child: const Column(
-                  children: [
-                    Text(AppStrings.username),
-                    AppTextField(),
-                  ],
-                ),
-              ),
-            ]),
-          ],
-        ),
-      ),
-    );
+            );
+          },
+        ));
   }
 }
